@@ -1,10 +1,11 @@
 {
-  "name": "<%= name %>",
+  "name": "<%= slugName %>",
   "version": "1.0.0",
   "description": "<%= description %>",
   "main": "dist/index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-register"
+    "test": "mocha --compilers js:babel-register",
+    "build": "./node_modules/.bin/babel src -d dist"
   },
   "author": "Aaron Larner",
   "license": "MIT",

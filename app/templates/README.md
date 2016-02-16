@@ -1,1 +1,1 @@
-# bookshelf-api
+# <%= name %>

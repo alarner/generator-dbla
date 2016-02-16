@@ -1,4 +1,5 @@
 var generators = require('yeoman-generator');
+var slug = require('slug');
 module.exports = generators.Base.extend({
 	answers: {},
 	// The name `constructor` is important here
@@ -24,6 +25,7 @@ module.exports = generators.Base.extend({
 		],
 		function (answers) {
 			self.answers = answers;
+			self.answers.slugName = slug(answers.name);
 			done();
 		}.bind(this));
 	},
@@ -68,6 +70,11 @@ module.exports = generators.Base.extend({
 		this.fs.copyTpl(
 			this.templatePath('LICENSE'),
 			this.destinationPath('LICENSE')
+		);
+		this.fs.copyTpl(
+			this.templatePath('README.md'),
+			this.destinationPath('README.md'),
+			this.answers
 		);
 	},
 	packagejson: function() {
