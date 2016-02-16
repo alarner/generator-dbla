@@ -1,6 +1,6 @@
 {
   "name": "generator-dbla",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "My generator for bootstraping node libs",
   "main": "index.js",
   "scripts": {
