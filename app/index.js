@@ -65,6 +65,10 @@ module.exports = generators.Base.extend({
 			this.templatePath('src/index.js'),
 			this.destinationPath('src/index.js')
 		);
+		this.fs.copyTpl(
+			this.templatePath('LICENSE'),
+			this.destinationPath('LICENSE')
+		);
 	},
 	packagejson: function() {
 		this.fs.copyTpl(
