@@ -7,7 +7,7 @@
 		},
 	},
 	"rules": {
-		"quotes": [2, "double"],
+		"quotes": [2, "single"],
 		"no-unused-vars": [2, {"vars": "local", "args": "none"}],
 		"eol-last": [0],
 		"space-infix-ops": [0],
