@@ -1,12 +1,13 @@
 {
-	"ecmaFeatures": {
-		"arrowFunctions": true,
-		"jsx": true,
-		"blockBindings": true,
-		"destructuring": true
+	"parserOptions": {
+		"ecmaVersion": 6,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true
+		},
 	},
 	"rules": {
-		"quotes": [2, "single"],
+		"quotes": [2, "double"],
 		"no-unused-vars": [2, {"vars": "local", "args": "none"}],
 		"eol-last": [0],
 		"space-infix-ops": [0],
@@ -22,9 +23,6 @@
 		"browser": true,
 		"node": true
 	},
-	"plugins": [
-		"react"
-	],
 	"globals": {
 		"describe"   : false,
 		"it"         : false,
