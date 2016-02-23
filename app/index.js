@@ -35,7 +35,9 @@ module.exports = generators.Base.extend({
 				'babel-cli',
 				'babel-preset-es2015',
 				'chai',
-				'mocha'
+				'mocha',
+				'eslint',
+				'eslint-plugin-react'
 			],
 			{ 'saveDev': true }
 		);
