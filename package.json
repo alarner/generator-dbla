@@ -24,6 +24,6 @@
   "homepage": "https://github.com/alarner/generator-dbla#readme",
   "dependencies": {
     "slug": "^0.9.1",
-    "yeoman-generator": "^0.22.5"
+    "yeoman-generator": "^0.23.3"
   }
 }
